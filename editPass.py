@@ -16,3 +16,5 @@ newFileByteArray = bytearray(newFileBytes)
 with open(filename, 'r+b') as f:
     f.seek(0x0001e020+0x6)
     f.write(newFileByteArray)
+
+print "Password changed!"
